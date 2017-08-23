@@ -1,0 +1,42 @@
+{
+    "name": "bi-service-couchbase",
+    "version": "0.1.0",
+    "description": "Integrates kouchbase-odm with bi-service",
+    "main": "./index.js",
+    "testFramework": "mocha",
+    "author": "Bohemia Interactive",
+    "contributors": [
+        "fogine <TODO>"
+    ],
+    "private": false,
+    "engines": {
+        "node": ">=6.4.0"
+    },
+    "license": "GPL-3.0",
+    "files": [
+        "lib",
+        "LICENCE",
+        "COPYRIGHT",
+        "CHANGELOG.md"
+    ],
+    "scripts": {
+        "coverage": "./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha -- --ui bdd -R spec false -t 5000 'tests/**/*.js'",
+        "tests": "mocha --ui bdd --colors --check-leaks -t 5000 --reporter spec --parse-pos-args false 'tests/**/*.js'",
+        "test": "npm run tests"
+    },
+    "peerDependencies": {
+        "bi-service": ">=0.16.0"
+    },
+    "dependencies": {
+        "kouchbase-odm": "^2.0.0-rc.1"
+    },
+    "devDependencies": {
+        "chai": "^3.5.0",
+        "chai-as-promised": "^5.3.0",
+        "istanbul": "^0.4.3",
+        "mocha": "^2.5.3",
+        "sinon": "^1.17.3",
+        "sinon-as-promised": "^4.0.0",
+        "sinon-chai": "^2.8.0"
+    }
+}
