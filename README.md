@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/BohemiaInteractive/bi-service-couchbase.svg?branch=master)](https://travis-ci.org/BohemiaInteractive/bi-service-couchbase)   
 
 ```javascript
 const config           = require('bi-config');
