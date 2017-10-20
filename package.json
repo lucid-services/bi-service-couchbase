@@ -2,7 +2,7 @@
     "name": "bi-service-couchbase",
     "version": "0.1.0",
     "description": "Integrates kouchbase-odm with bi-service",
-    "main": "./index.js",
+    "main": "./lib/index.js",
     "testFramework": "mocha",
     "author": "Bohemia Interactive",
     "contributors": [
