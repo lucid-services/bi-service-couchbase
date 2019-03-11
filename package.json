@@ -1,12 +1,12 @@
 {
-    "name": "bi-service-couchbase",
-    "version": "0.1.1",
-    "description": "Integrates kouchbase-odm with bi-service",
+    "name": "serviser-couchbase",
+    "version": "1.0.0",
+    "description": "Integrates kouchbase-odm with serviser",
     "main": "./lib/index.js",
     "testFramework": "mocha",
-    "author": "Bohemia Interactive",
+    "author": "fogine",
     "contributors": [
-        "fogine <TODO>"
+        "fogine"
     ],
     "private": false,
     "engines": {
@@ -24,14 +24,11 @@
         "tests": "mocha --ui bdd --colors --check-leaks -t 5000 --reporter spec --parse-pos-args false 'tests/**/*.js'",
         "test": "npm run tests"
     },
-    "peerDependencies": {
-        "bi-service": ">=0.16.0"
-    },
     "dependencies": {
-        "kouchbase-odm": "^2.0.0-rc.1"
+        "kouchbase-odm": "^3.0.0"
     },
     "devDependencies": {
-        "bi-service": ">=0.16.0",
+        "serviser": "latest",
         "chai": "^3.5.0",
         "chai-as-promised": "^5.3.0",
         "istanbul": "^0.4.3",
