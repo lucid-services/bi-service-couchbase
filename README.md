@@ -1,9 +1,9 @@
-[![Build Status](https://travis-ci.org/BohemiaInteractive/bi-service-couchbase.svg?branch=master)](https://travis-ci.org/BohemiaInteractive/bi-service-couchbase)   
+[![Build Status](https://travis-ci.org/lucid-services/serviser-couchbase.svg?branch=master)](https://travis-ci.org/lucid-services/serviser-couchbase)   
 
 ```javascript
-const config           = require('bi-config');
+const config           = require('serviser-config');
 const CouchbaseODM     = require('kouchbase-odm');
-const CouchbaseCluster = require('bi-service-couchbase');
+const CouchbaseCluster = require('serviser-couchbase');
 
 var cluster = new CouchbaseCluster(config.get('storage:couchbase'));
 
