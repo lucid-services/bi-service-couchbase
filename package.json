@@ -1,12 +1,12 @@
 {
     "name": "serviser-couchbase",
-    "version": "0.1.1-dev.20180618.2",
+    "version": "1.0.0",
     "description": "Integrates kouchbase-odm with serviser",
     "main": "./lib/index.js",
     "testFramework": "mocha",
     "author": "fogine",
     "contributors": [
-        "fogine <TODO>"
+        "fogine"
     ],
     "private": false,
     "engines": {
